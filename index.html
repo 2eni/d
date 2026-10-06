@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parquímetro</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caixa">
+    <h1>Parquimetro</h1>
+    <h2 id="saldo">Saldo R$:</h2>
+        <div class="operacao">
+            <input type="number" id="depositar" placeholder="Valor">
+        </div>
+        <div class="operacao">
+            <p id="troco"></p>
+            <p id="tempo"></p>
+            <button onclick="conta.calcular()" id="botao">Calcular</button>
+        </div>
+    </div>
+</body>
+</html>
