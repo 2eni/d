@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parquímetro</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="caixa">
     <h1>Parquimetro</h1>
     <h2 id="saldo">Saldo R$:</h2>
+    <form>
         <div class="operacao">
-            <input type="number" id="depositar" placeholder="Valor">
+            <input type="number" id="valor" placeholder="Valor">
+            <button type="submit" id="botao">Calcular</button>
         </div>
+    </form>
         <div class="operacao">
             <p id="troco"></p>
             <p id="tempo"></p>
-            <button onclick="conta.calcular()" id="botao">Calcular</button>
         </div>
     </div>
+    <script type="module" src="/js/app.js"></script>
 </body>
 </html>
